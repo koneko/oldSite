@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code Cave</title>
+	<link rel="shortcut icon" href="cave.ico"/>
+</head>
+<body>
+	<h1 style="color:green">Welcome to the 'Code Cave' ツ</h1>
+	<br>
+	<p>All of the stuff created by JetStrafe is inside the 'folders'</p>
+	<p>Have fun!</p>
+	<a href="games/gamesmain.html">Games Folder</a>
+<br>
+<br>
+<br>
+	<a href="otherapps/otherapps.html">Other Applications</a>
+<br>
+<br>
+<button onclick='alert("© JetStrafe 2019")'></button>Credits</button>
+<br>
+<button onclick="javascript:toggleDark();" id="toggleDark">Dark</button>
+</body>
+</html>
+<style>
+	a {
+		font-size:30px;
+		text-align: center;
+		margin: center;
+		font-family:sans-serif;
+	}
+	button {
+		font-size:20px;
+		background-color:yellow;
+		color:black;
+	}
+	h1, p, h2 {
+		color:#d3c90e;
+	}
+</style>
+<script>
+	function darkOn(){
+		document.body.style.backgroundColor="black";
+		var button=document.getElementById("toggleDark")
+		button.innerText="Light"
+	}
+	function toggleDark(){
+		var button=document.getElementById("toggleDark");
+		if(button.innerText=="Dark")
+			darkOn()
+		else 
+			darkOff()
+	}
+	function darkOff(){
+		document.body.style.backgroundColor="white";
+		var button=document.getElementById("toggleDark")
+		button.innerText="Dark"
+	}
+</script>

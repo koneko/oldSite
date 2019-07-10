@@ -1,0 +1,39 @@
+body {
+    background: radial-gradient(rgb(0, 255, 0), rgb(201, 245, 201));
+    font-size: 1.2em;
+    width: 50%;
+    margin: 20px auto;
+    padding:20px;
+    text-align: center;
+    min-height: 50vh;
+}
+#songList {
+    background: orange;
+    border-radius: 10px;
+    text-align: left;
+}
+li {
+    padding: 15px;
+
+}
+li:hover, svg:hover {
+    cursor: pointer;
+}
+li, span, h4 {
+    color: white;
+}
+#controls {
+    border: 1px lightgray solid; 
+    border-radius: 10px;
+    background: orange;
+    padding: 1.5em;
+}
+svg {
+    color: lightgoldenrodyellow;
+}
+progress {
+    width: 80%;
+    margin: 10px;
+  background-color: orange;
+}
+/*Created by ControledYT*/
