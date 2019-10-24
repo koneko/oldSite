@@ -27,7 +27,7 @@ table.tictactoe td {
 }
 button {
     position: fixed;
-    padding: 5px;
+    padding: 15px;
     color:white;
     background-color: black;
     border: 3px dashed white;
