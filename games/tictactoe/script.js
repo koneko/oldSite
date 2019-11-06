@@ -1,3 +1,5 @@
+// gl,gs,gd,sl,ss,sd,dl,ds,dd
+
 var gl = document.getElementById("gl");
     var gs = document.getElementById("gs");
     var gd = document.getElementById("gd");
@@ -53,6 +55,10 @@ var gl = document.getElementById("gl");
             return true;
         if (isRowFull(gd, ss, dl))
             return true;
+        if (isRowFull(gl, gs, gd, sl, ss, sd, dl, ds, dd)) {
+        alert(`Draw.`)
+        startgame();
+        }
     }
 
     function isRowFull(cell1, cell2, cell3) {
